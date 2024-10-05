@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas P5 - Kelompok 2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Playfair Display', serif; /* Menggunakan font yang mirip dengan gambar */
+        }
+
+        .hero-section {
+            background-image: url('./img/background.jpeg'); /* Ganti dengan URL gambar background yang sesuai */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: #f5e7c9; /* Warna sesuai dengan teks dalam gambar */
+            position: relative;
+            padding-left: 100px; /* Kurangi padding kiri untuk mendekatkan teks ke sisi kiri */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Overlay gelap seperti pada gambar */
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            text-align: left; /* Teks rata kiri */
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 60px;
+            color: #c1a97b; /* Warna logo mirip dengan gambar */
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0;
+            font-weight: 700;
+            line-height: 1.2;
+            color: #c1a97b;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+            letter-spacing: 1px;
+            color: #ffffff; /* Warna paragraf mirip dengan gambar */
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 30px;
+            font-size: 16px;
+            color: #000;
+            background-color: #c1a97b; /* Warna tombol sesuai */
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #b09067; /* Hover efek */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-section">
+        <div class="overlay"></div>
+        <div class="content">
+            <img src="./img/logo.png" alt="" class="logo">
+            <br>
+            <h1>Merokok Mengancam</h1>
+            <h1>Kesehatan Paru-Paru</h1>
+            <p>INOVASI TEKNOLOGI CERDAS UNTUK KESEHATAN</p>
+            <a href="halaman2.html" class="btn">LEARN MORE</a>
+        </div>
+    </div>
+
+</body>
+</html>

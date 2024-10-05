@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahaya Rokok Untuk Paru-Paru</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Playfair Display', serif;
+            color: #5a4636;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #b09067;
+            margin-bottom: 20px;
+        }
+
+        .card-section {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px; /* Tambahkan jarak antar card */
+        }
+
+        .card {
+            padding: 20px;
+            text-align: center;
+            border-radius: 0; /* Menghilangkan garis lengkung */
+        }
+
+        .card:nth-child(1) {
+            background-color: #ffffff; /* Card pertama: putih */
+            border: 1px solid #ccc; /* Border tipis */
+        }
+
+        .card:nth-child(2) {
+            background-color: #a0522d; /* Card kedua: coklat */
+            color: #fff; /* Warna teks putih */
+        }
+
+        .card:nth-child(3) {
+            background-color: #d2b48c; /* Card ketiga: coklat susu */
+            color: #5a4636; /* Warna teks gelap */
+        }
+
+        .card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #c1a97b;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #b09067;
+        }
+
+        @media (max-width: 768px) {
+            .card-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 80%; /* Card lebih lebar saat di layar kecil */
+                margin-bottom: 20px; /* Jarak antar card di mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Berikut Ini Beberapa Bahayanya Rokok Untuk Kesehatan Paru-Paru</h2>
+        <br>
+        <br>
+        <div class="card-section">
+            <div class="card">
+                <h3>Mengandung zat beracun</h3>
+                <p>Rokok mengandung zat beracun yang merusak paru-paru.</p>
+                <a href="zatberacun.html" class="btn">GET IN TOUCH</a>
+            </div>
+            <div class="card">
+                <h3>Merusak pernafasan</h3>
+                <p>Rokok menyebabkan kerusakan permanen pada sistem pernapasan.</p>
+                <a href="#" class="btn">GET IN TOUCH</a>
+            </div>
+            <div class="card">
+                <h3>Menyebabkan kanker paru-paru</h3>
+                <p>Merokok adalah penyebab utama kanker paru-paru.</p>
+                <a href="#" class="btn">GET IN TOUCH</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
