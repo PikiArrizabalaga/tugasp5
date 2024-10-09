@@ -7,13 +7,16 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
+        /* Styling Global */
         body, html {
             margin: 0;
             padding: 0;
             font-family: 'Playfair Display', serif;
             color: #5a4636;
+            background-color: #21295c;
         }
 
+        /* Container Utama */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -21,27 +24,36 @@
             text-align: center;
         }
 
+        /* Judul Halaman */
         h2 {
             font-size: 36px;
             color: #b09067;
             margin-bottom: 20px;
         }
 
+        /* Card Section dengan Flexbox */
         .card-section {
             display: flex;
             justify-content: space-around;
-            gap: 20px; /* Tambahkan jarak antar card */
+            gap: 20px; /* Jarak antar card */
         }
 
+        /* Card */
         .card {
             padding: 20px;
             text-align: center;
-            border-radius: 0; /* Menghilangkan garis lengkung */
+            border-radius: 0;
+            flex: 1; /* Membuat semua card sama besar */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 300px; /* Menentukan tinggi card agar seragam */
         }
 
+        /* Styling Masing-masing Card */
         .card:nth-child(1) {
             background-color: #ffffff; /* Card pertama: putih */
-            border: 1px solid #ccc; /* Border tipis */
+            border: 1px solid #ccc;
         }
 
         .card:nth-child(2) {
@@ -54,30 +66,35 @@
             color: #5a4636; /* Warna teks gelap */
         }
 
+        /* Judul di dalam Card */
         .card h3 {
             font-size: 22px;
             margin-bottom: 10px;
         }
 
+        /* Paragraf dalam Card */
         .card p {
             font-size: 18px;
             margin-bottom: 20px;
         }
 
+        /* Tombol GET IN TOUCH */
         .btn {
             background-color: #c1a97b;
             color: #fff;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 10px;
+            margin-top: auto; /* Agar tombol selalu berada di bagian bawah */
             display: inline-block;
         }
 
+        /* Hover pada Tombol */
         .btn:hover {
             background-color: #b09067;
         }
 
+        /* Media Queries untuk Responsif */
         @media (max-width: 768px) {
             .card-section {
                 flex-direction: column;
@@ -89,14 +106,28 @@
                 margin-bottom: 20px; /* Jarak antar card di mobile */
             }
         }
+        
+        /* Styling untuk Tombol Kembali */
+        .back-btn {
+            margin-top: 40px; /* Jarak dari card section */
+            background-color: #b09067;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .back-btn:hover {
+            background-color: #c1a97b;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <h2>Berikut Ini Beberapa Bahayanya Rokok Untuk Kesehatan Paru-Paru</h2>
-        <br>
-        <br>
+        <br><br>
         <div class="card-section">
             <div class="card">
                 <h3>Mengandung zat beracun</h3>
@@ -106,14 +137,17 @@
             <div class="card">
                 <h3>Merusak pernafasan</h3>
                 <p>Rokok menyebabkan kerusakan permanen pada sistem pernapasan.</p>
-                <a href="#" class="btn">GET IN TOUCH</a>
+                <a href="halaman4.html" class="btn">GET IN TOUCH</a>
             </div>
             <div class="card">
                 <h3>Menyebabkan kanker paru-paru</h3>
                 <p>Merokok adalah penyebab utama kanker paru-paru.</p>
-                <a href="#" class="btn">GET IN TOUCH</a>
+                <a href="kanker.html" class="btn">GET IN TOUCH</a>
             </div>
         </div>
+
+        <!-- Tombol Kembali -->
+        <a href="index.html" class="back-btn">Kembali ke Halaman Utama</a>
     </div>
 
 </body>

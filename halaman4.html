@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahaya Rokok untuk Sistem Pernafasan</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+        /* Global styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: #21295c; /* Dark navy blue */
+            color: #b09067; /* Text color */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #d2b48c; /* Light brown/gold color */
+            margin-bottom: 30px;
+        }
+
+        /* Card section styling */
+        .card-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px; /* Spacing between cards */
+        }
+
+        .card {
+            background-color: #d2b48c; /* Light brown (for cards) */
+            color: #5a4636; /* Dark text */
+            padding: 20px;
+            border-radius: 15px;
+            width: 45%; /* To keep the cards equally sized */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+            position: relative;
+            font-size: 18px;
+        }
+
+        .card img {
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+            width: 60px;
+            height: auto;
+        }
+
+        .card-left img {
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+            width: 60px;
+            height: auto;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .card-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Styling untuk link Kembali */
+        .back-link {
+            text-align: left; /* Memindahkan tulisan kembali ke kiri */
+            margin-bottom: 20px; /* Jarak antara link kembali dan judul */
+        }
+
+        .back-link a {
+            text-decoration: none; /* Menghilangkan garis bawah */
+            color: #ffffff; /* Warna teks link */
+            font-size: 18px; /* Ukuran font */
+        }
+
+        .back-link a:hover {
+            text-decoration: underline; /* Menambahkan garis bawah saat hover */
+            color: #b09067; /* Warna saat hover */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="back-link">
+            <a href="halaman3.html">Kembali</a>
+        </div>
+        <h2>Mengapa Rokok Dapat Merusak Sistem Pernafasan</h2>
+        <div class="card-section">
+            <!-- Card 1 -->
+            <div class="card card-left">
+                <p><strong>Kerusakan Silia:</strong> Silia adalah rambut-rambut kecil di sepanjang saluran udara yang berfungsi membersihkan lendir dan partikel asing dari paru-paru. Asap rokok melumpuhkan dan merusak silia, sehingga membuat paru-paru lebih rentan terhadap infeksi dan penumpukan lendir.</p>
+                <img src="./img/cigarrete1.png" alt="Cigarette illustration"> <!-- Ganti dengan gambar yang sesuai -->
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <p><strong>Iritasi dan Peradangan:</strong> Zat-zat kimia dalam asap rokok menyebabkan iritasi pada saluran pernapasan, yang memicu peradangan. Peradangan kronis ini bisa menyebabkan kondisi seperti bronkitis kronis, yang ditandai dengan batuk yang persisten dan produksi lendir yang berlebihan.</p>
+                <img src="./img/cigarrete2.png" alt="Burnt cigarette illustration"> <!-- Ganti dengan gambar yang sesuai -->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
