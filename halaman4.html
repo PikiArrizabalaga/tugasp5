@@ -12,7 +12,7 @@
             margin: 0;
             padding: 0;
             font-family: 'Playfair Display', serif;
-            background-color: #21295c; /* Dark navy blue */
+            background-image: url(./img/background.jpeg); /* Dark navy blue */
             color: #b09067; /* Text color */
         }
 
@@ -24,7 +24,7 @@
         }
 
         h2 {
-            font-size: 36px;
+            font-size: 55px;
             color: #d2b48c; /* Light brown/gold color */
             margin-bottom: 30px;
         }
@@ -38,28 +38,31 @@
 
         .card {
             background-color: #d2b48c; /* Light brown (for cards) */
-            color: #5a4636; /* Dark text */
+            color: #000; /* Dark text */
             padding: 20px;
             border-radius: 15px;
             width: 45%; /* To keep the cards equally sized */
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
             position: relative;
-            font-size: 18px;
+            font-size: 27px;
+            overflow: hidden;
         }
 
         .card img {
             position: absolute;
             bottom: 0;
             right: 10px;
-            width: 60px;
+            width: 200px;
             height: auto;
+            object-fit: cover; /* To make the image cover the card background */
+            z-index: 1; /* Place the image behind the text */
         }
 
         .card-left img {
             position: absolute;
             bottom: 0;
             right: 10px;
-            width: 60px;
+            width: 130px;
             height: auto;
         }
 
