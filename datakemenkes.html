@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas P5 - Kelompok 2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Playfair Display', serif;
+            color: #5a4636;
+            background-image: url(./img/background.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            position: relative;
+            max-width: 1200px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .container p {
+            font-size: 30px;
+            color: white;
+        }
+
+        .container a img {
+            width: 50%; /* Mengatur ukuran gambar menjadi 50% dari lebar container */
+            height: auto;
+            border-radius: 10px; /* Opsional: Membuat sudut gambar melengkung */
+        }
+
+        /* Teks di atas gambar */
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 36px;
+            background-color: rgba(0, 0, 0, 0.5); /* Latar belakang gelap di belakang teks */
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .text-overlay:hover {
+            background-color: rgba(0, 0, 0, 0.7); /* Efek hover untuk teks */
+        }
+
+        /* Button Kembali */
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #c1a97b;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .back-btn:hover {
+            background-color: #5a4636; /* Efek hover untuk button */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p>Perokok Aktif di Indonesia Tembus 70 Juta Orang, Mayoritas Anak Muda</p>
+        <!-- Link dengan gambar -->
+        <a href="https://p2ptm.kemkes.go.id/informasi-p2ptm/perokok-aktif-di-indonesia-tembus-70-juta-orang-mayoritas-anak-muda" target="_blank">
+            <img src="./img/kemenkes.jpeg" alt="Deskripsi Gambar">
+        </a>
+
+        <!-- Button Kembali -->
+        <br>
+        <a href="javascript:history.back()" class="back-btn">Kembali</a>
+    </div>
+
+</body>
+</html>

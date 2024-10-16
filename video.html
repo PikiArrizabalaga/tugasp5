@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas P5 - Kelompok 2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Playfair Display', serif; /* Menggunakan font yang mirip dengan gambar */
+            color: #5a4636;
+            background-image: url(./img/background.jpeg); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-container {
+            max-width: 800px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .video-container video {
+            width: 100%; /* Agar video mengisi lebar kontainer */
+            height: auto;
+            border-radius: 10px; /* Opsional: Membuat sudut video melengkung */
+        }
+
+        .description {
+            font-size: 40px;
+            color: white;
+            margin: 10px 0;
+        }
+
+        .back-button {
+            background-color: #c1a97b; /* Warna tombol */
+            color: white; /* Warna teks tombol */
+            padding: 10px 20px; /* Padding tombol */
+            text-decoration: none; /* Menghilangkan garis bawah */
+            border-radius: 5px; /* Membuat sudut tombol melengkung */
+            font-size: 24px; /* Ukuran teks tombol */
+            margin-top: 20px; /* Jarak atas tombol */
+            transition: background-color 0.3s; /* Efek transisi pada hover */
+        }
+
+        .back-button:hover {
+            background-color: #5a4636; /* Warna tombol saat hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <div class="description">Video Tentang Bahaya Rokok Bagi Kesehatan Paru-paru</div>
+        <video controls>
+            <source src="./img/video1.mp4" type="video/mp4"> <!-- Ganti dengan path video yang sesuai -->
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <br>
+        <a href="index.html" class="back-button">Kembali</a> <!-- Ganti # dengan URL halaman yang ingin dituju -->
+    </div>
+
+</body>
+</html>

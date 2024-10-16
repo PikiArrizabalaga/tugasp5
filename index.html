@@ -51,7 +51,7 @@
         }
 
         h1 {
-            font-size: 48px;
+            font-size: 64px; /* Memperbesar ukuran font */
             margin: 0;
             font-weight: 700;
             line-height: 1.2;
@@ -80,9 +80,82 @@
         .btn:hover {
             background-color: #b09067; /* Hover efek */
         }
+
+        /* Sidebar */
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            overflow-x: hidden;
+            transition: width 0.5s ease; /* Transisi smooth saat membuka/menutup */
+            padding-top: 60px;
+            z-index: 3;
+        }
+
+        .sidebar a {
+            padding: 10px 25px;
+            text-decoration: none;
+            font-size: 22px;
+            color: #fff;
+            display: block;
+            transition: opacity 0.5s ease, transform 0.5s ease; /* Tambahkan transisi smooth untuk teks */
+            opacity: 0; /* Mulai dengan teks yang tidak terlihat */
+            transform: translateX(-20px); /* Posisi awal teks di luar */
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 36px;
+        }
+
+        /* Menu Icon */
+        .menu-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 4;
+            color: #c1a97b;
+            transition: transform 0.3s ease; /* Efek smooth pada ikon */
+        }
+
+        .menu-icon.active {
+            transform: rotate(90deg); /* Putar ikon saat sidebar terbuka */
+        }
+
+        /* Tampilkan teks sidebar saat terbuka */
+        .sidebar.open a {
+            opacity: 1;
+            transform: translateX(0); /* Teks kembali ke posisi normal */
+        }
     </style>
 </head>
 <body>
+    <!-- Menu Icon -->
+    <span class="menu-icon" id="menuIcon" onclick="toggleNav()">&#9776; </span>
+
+    <!-- Sidebar -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">×</a>
+        <br>
+        <a href="index.html">Beranda</a>
+        <a href="halaman2.html">Bahaya Rokok</a>
+        <a href="halaman3.html">Akibat Merokok</a>
+        <a href="datakemenkes.html">Data Kemenkes</a>
+        <a href="video.html">Video</a>
+        <a href="halaman5.html">Slogan</a>
+        <a href="kuis.html">Kuis</a>
+    </div>
 
     <div class="hero-section">
         <div class="overlay"></div>
@@ -92,10 +165,25 @@
             <h1>Merokok Mengancam</h1>
             <h1>Kesehatan Paru-Paru</h1>
             <p>INOVASI TEKNOLOGI CERDAS UNTUK KESEHATAN</p>
-            <a href="halaman2.html" class="btn">LEARN MORE</a>
-            <a href="halaman5.html" class="btn btn-info">?</a>
         </div>
     </div>
 
+    <script>
+        /* Fungsi untuk membuka dan menutup sidebar */
+        function toggleNav() {
+            var sidebar = document.getElementById("mySidebar");
+            var menuIcon = document.getElementById("menuIcon");
+
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+                sidebar.classList.remove("open");
+                menuIcon.classList.remove("active");
+            } else {
+                sidebar.style.width = "250px";
+                sidebar.classList.add("open");
+                menuIcon.classList.add("active");
+            }
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas P5 - Kelompok 2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Playfair Display', serif; /* Menggunakan font yang mirip dengan gambar */
+            color: #ffffff;
+            font-size: 30px;
+            background-image: url(./img/background.jpeg); 
+            background-size: cover; /* Memastikan gambar latar belakang menutupi area */
+            background-position: center; /* Memusatkan gambar latar belakang */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Mengatur item agar terpusat secara horizontal */
+            justify-content: center; /* Mengatur item agar terpusat secara vertikal */
+        }
+
+        .image-container {
+            margin: 20px; /* Memberikan jarak antara gambar */
+            text-align: center; /* Memusatkan gambar dan teks */
+        }
+
+        .image-container img {
+            width: 80%; /* Menjaga rasio aspek gambar */
+            border-radius: 10px; /* Membuat sudut gambar melengkung */
+        }
+
+        .image-container .small-img {
+            width: 50%; /* Mengatur lebar gambar kedua menjadi 50% dari kontainer */
+            max-width: 300px; /* Ukuran maksimal gambar kedua */
+        }
+
+        .image-container a img {
+            width: 100%; /* Gambar pertama mengisi 100% lebar kontainer */
+            max-width: none; /* Tidak ada batasan ukuran maksimal */
+        }
+
+        .image-container a {
+            display: inline-block; /* Agar bisa di-klik */
+            margin-top: 10px; /* Jarak antara gambar dan link */
+            color: #c1a97b; /* Warna teks link */
+            text-decoration: none; /* Menghilangkan garis bawah */
+            font-size: 20px; /* Ukuran font */
+            transition: color 0.3s; /* Efek transisi saat hover */
+        }
+
+        .image-container a:hover {
+            color: #b09067; /* Warna teks saat hover */
+        }
+
+        .back-button {
+            margin-top: 20px; /* Jarak di atas tombol */
+            padding: 10px 20px; /* Ukuran padding tombol */
+            background-color: #c1a97b; /* Warna latar belakang tombol */
+            color: white; /* Warna teks tombol */
+            border: none; /* Menghilangkan border tombol */
+            border-radius: 5px; /* Sudut tombol melengkung */
+            font-size: 20px; /* Ukuran font tombol */
+            cursor: pointer; /* Menunjukkan bahwa ini adalah tombol */
+            transition: background-color 0.3s; /* Efek transisi saat hover */
+        }
+
+        .back-button:hover {
+            background-color: #b09067; /* Warna tombol saat hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="./img/rokok.jpeg" alt="Gambar Pertama"> <!-- Gambar pertama dengan ukuran lebih besar -->
+    </div>
+
+    <p>LINK KUIS</p>
+    <div class="image-container">
+        <a href="https://create.kahoot.it/share/bahaya-merokok/a2624a21-1759-451a-af51-5e30e7c04f91" target="_blank"> <!-- Ganti dengan URL yang diinginkan -->
+            <img class="small-img" src="./img/kahoot.jpeg" alt="Gambar Kedua"> <!-- Gambar kedua yang dikecilkan dengan link -->
+        </a>
+    </div>
+
+    <button class="back-button" onclick="window.history.back();">Kembali</button> <!-- Tombol kembali -->
+
+</body>
+</html>
